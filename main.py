@@ -75,11 +75,11 @@ def getEncryptedOrDecryptedMessage(message, alphabets, rotor1, rotor2, rotor3, r
         index1 = (index1 + 1) % 26
         rotor1 = rotor1[1:] + rotor1[:1]
 
-        if index1 is 0:
+        if index1 == 0:
             index2 = (index2 + 1) % 26
             rotor2 = rotor2[1:] + rotor2[:1]
 
-            if index2 is 0:
+            if index2 == 0:
                 index3 = (index3 + 1) % 26
                 rotor3 = rotor3[1:] + rotor3[:1]
 
